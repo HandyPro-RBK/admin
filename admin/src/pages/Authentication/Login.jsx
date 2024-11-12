@@ -26,12 +26,9 @@ const Login = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          email: values.email,
-          password: values.password,
-        }),
+        body: JSON.stringify({ email: values.email, password: values.password }),
       })
-        .then(async (response) => {
+        .then(async(response) => {
           const data = await response.json();
           console.log(data);
           if (data.accessToken) {
