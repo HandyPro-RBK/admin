@@ -109,18 +109,6 @@ const Navbar = () => {
         </button>
 
         <button
-          onClick={toggleTheme}
-          className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-200"
-          aria-label="Toggle theme"
-        >
-          {isDark ? (
-            <Sun className="text-gray-600 dark:text-gray-400" size={20} />
-          ) : (
-            <Moon className="text-gray-600 dark:text-gray-400" size={20} />
-          )}
-        </button>
-
-        <button
           className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-200 relative"
           aria-label="Notifications"
         >
